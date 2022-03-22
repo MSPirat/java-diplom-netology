@@ -20,8 +20,9 @@ public class Main {
         server.start(); // Запускаем
 
         // Или то же, но с выводом на экран:
-        // String url = "https://pngicon.ru/file/uploads/vinni-pukh-v-png.png";
+        // String url = "https://i.ibb.co/6DYM05G/edu0.jpg";
         // String url = "https://raw.githubusercontent.com/netology-code/java-diplom/main/pics/simple-test.png";
+        // String url = "http://hiyoto.com/micro/assets/images/icon/color-palette-small.png";
         // String imgTxt = converter.convert(url);
         // System.out.println(imgTxt);
     }

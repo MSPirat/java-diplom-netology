@@ -16,8 +16,8 @@ import java.nio.file.Path;
 public class GServer {
     public static final int PORT = 8888;
 
-    private HttpServer server;
-    private TextGraphicsConverter converter;
+    private final HttpServer server;
+    private final TextGraphicsConverter converter;
 
     public GServer(TextGraphicsConverter converter) throws Exception {
         if (converter == null) {

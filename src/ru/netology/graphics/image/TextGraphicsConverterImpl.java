@@ -109,7 +109,7 @@ public class TextGraphicsConverterImpl implements TextGraphicsConverter {
             for (int w = 0; w < newWidth; w++) {
                 int color = bwRaster.getPixel(w, h, new int[3])[0];
                 char c = schema.convert(color);
-                s.append(c);
+                s.append(c).append(c);
 //            ??? //запоминаем символ c, например, в двумерном массиве или как-то ещё на ваше усмотрение
             }
             s.append("\n");
@@ -120,7 +120,9 @@ public class TextGraphicsConverterImpl implements TextGraphicsConverter {
         // каждый пиксель превращать в два повторяющихся символа, полученных
         // от схемы.
 
-        return s.toString().toString(); // Возвращаем собранный текст.
+        // Возвращаем собранный текст.
+
+        return String.valueOf(s);
     }
 
     private double getRatio(BufferedImage img) {
